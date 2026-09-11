@@ -1,0 +1,110 @@
+/**
+ * Bundled mirror of `server/data/content.json`.
+ * Keeps the site fully renderable even when the backend is not running.
+ */
+export const fallbackContent = {
+  profile: {
+    name: 'Yathu',
+    fullName: 'Yathukrishnan T.U',
+    role: 'AI Engineer',
+    email: 'yathukrish10@gmail.com',
+    location: 'Kottayam, Kerala, India',
+    availability: 'Open to paid work',
+    tagline: ['Building intelligent', 'products with AI —', 'shipped with clean,', 'modern web engineering.'],
+    services: ['AI engineering', 'Machine learning', 'Data science', 'Full-stack web dev', 'React · TypeScript'],
+    marquee: ['Open to paid work', 'AI engineering', 'Machine learning', 'Data science', 'Full-stack web dev', 'React'],
+    socials: [
+      { label: 'GitHub', url: 'https://github.com/Yathukrishnan' },
+      { label: 'LinkedIn', url: 'https://www.linkedin.com/in/yathukrishnan-t-u-3124aa256' },
+      { label: 'X / Twitter', url: 'https://x.com/yathu_ad063' },
+      { label: 'Instagram', url: 'https://www.instagram.com/yathukrishn15?stkn=Z29mZHdmOGkwenN0' },
+      { label: 'Mail', url: 'mailto:yathukrish10@gmail.com' },
+    ],
+  },
+  about: {
+    statement: 'Designing intelligent systems where machine learning meets clean, production-grade engineering.',
+    bio: "I'm Yathukrishnan T.U — an AI engineer and Artificial Intelligence & Data Science student at St. Joseph College of Engineering and Technology, Palai. My core work is building intelligent systems: machine learning models, data-driven products and AI-powered features that solve real problems. I also bring strong full-stack web development skills (React, TypeScript, Node) — the engineering layer that turns models into products people actually use.",
+  },
+  skills: [
+    { name: 'AI Engineering', level: 90 },
+    { name: 'Machine Learning', level: 85 },
+    { name: 'Data Science', level: 80 },
+    { name: 'JavaScript / TypeScript', level: 80 },
+    { name: 'React & CSS', level: 75 },
+  ],
+  expertise: [
+    {
+      num: '01',
+      title: 'AI Engineering',
+      text: 'Building intelligent products end-to-end — from problem framing and data pipelines to models and APIs that ship to real users.',
+      tags: ['Python', 'LLMs', 'ML systems'],
+    },
+    {
+      num: '02',
+      title: 'Machine Learning & Data Science',
+      text: 'Training, evaluating and deploying machine learning models, and turning raw data into decisions with rigorous analysis.',
+      tags: ['ML', 'Deep learning', 'Data science'],
+    },
+    {
+      num: '03',
+      title: 'Full-Stack Web Development',
+      text: 'Modern, responsive and scalable web applications with React, TypeScript and Node — the layer that puts AI in front of users.',
+      tags: ['React', 'TypeScript', 'Node.js'],
+    },
+    {
+      num: '04',
+      title: 'Motion & Interaction',
+      text: 'Restrained, purposeful animation — masked reveals, staggered entrances and hover states that guide attention instead of stealing it.',
+      tags: ['CSS', 'Micro-interactions', 'Canvas'],
+    },
+  ],
+  projects: [
+    { title: 'Medical Recommendation System', category: 'AI/ML disease & drug recommendation engine', year: '2025', tags: ['Machine learning', 'Healthcare'], colors: ['#10181a', '#1e3438'], url: 'https://github.com/Yathukrishnan/Medical-Recommendation-System' },
+    { title: 'Light Detection Car Control', category: 'Computer-vision light tracking rover', year: '2025', tags: ['Computer vision', 'Hardware'], colors: ['#14181a', '#24312e'], url: 'https://github.com/Yathukrishnan/Light-Track-Auto' },
+    { title: 'ASME Landing Page', category: 'Responsive club landing page & design', year: '2024', tags: ['Web design', 'Development'], colors: ['#181c22', '#2c333d'], url: 'https://github.com/Yathukrishnan/ASME_LANDING-' },
+    { title: 'News Reader AI', category: 'AI-powered news summarizer & reader', year: '2024', tags: ['AI', 'NLP'], colors: ['#17141b', '#2e2438'], url: 'https://github.com/Yathukrishnan/News_Reader_Ai' },
+  ],
+  experience: [
+    { period: '2026 — 2028', role: 'M.Sc — ICT & Internet Engineering', company: 'Tor Vergata University of Rome', place: 'Rome, Italy' },
+    { period: '2024 — Now', role: 'Web Developer', company: 'Pillzen Pvt. Ltd.', place: 'Palai' },
+    { period: 'Ongoing', role: 'B.Tech — Artificial Intelligence & Data Science', company: 'St. Joseph College of Engineering and Technology', place: 'Palai' },
+  ],
+  journey: [
+    {
+      year: '2019',
+      kind: 'edu',
+      title: 'High School — X Standard',
+      text: 'De Paul Higher Secondary School, Nazareth Hill — completed secondary education with a strong foundation in mathematics and science.',
+    },
+    {
+      year: '2019 — 2021',
+      kind: 'edu',
+      title: 'Higher Secondary — Bio-Maths',
+      text: "St. Mary's Higher Secondary School, Kuravilangad — higher secondary in the Bio-Maths stream, combining biology with mathematics.",
+    },
+    {
+      year: '2021 — 2025',
+      kind: 'edu',
+      title: 'B.Tech — Artificial Intelligence & Data Science',
+      text: "St. Joseph's College of Engineering and Technology, Palai — under APJ Abdul Kalam Technological University (KTU). Machine learning, deep learning, data science and the mathematics underneath them.",
+    },
+    {
+      year: '2023 — 2025',
+      kind: 'startup',
+      title: 'Co-founder & Web Developer · Pillzen Pvt. Ltd.',
+      text: 'Started a company with my friends and worked there as a web developer — shipping production web applications from design hand-off to deployment.',
+    },
+    {
+      year: 'Jan 2026 — Aug 2026',
+      kind: 'work',
+      title: 'Junior AI Research Assistant · NT Global Solution',
+      text: 'Worked on applied AI research — building and evaluating machine learning models and turning research into working systems.',
+    },
+    {
+      year: '2026 — Ongoing',
+      kind: 'edu',
+      title: 'M.Sc — ICT & Internet Engineering',
+      text: 'Tor Vergata University of Rome, Italy — advancing into networked systems, internet engineering and intelligent ICT.',
+    },
+  ],
+};
