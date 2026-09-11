@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useLocalTime } from '../hooks.js';
 
 export default function Hero({ profile }) {
@@ -37,12 +38,12 @@ export default function Hero({ profile }) {
         </ul>
 
         <div className="hero__cta">
-          <a className="btn btn--light" href="#contact">
+          <Link className="btn btn--light" to="/contact">
             Start a project <span className="btn__arrow">→</span>
-          </a>
-          <a className="btn btn--ghost" href="#work">
+          </Link>
+          <Link className="btn btn--ghost" to="/work">
             Selected work
-          </a>
+          </Link>
         </div>
 
         <div className="hero__meta">

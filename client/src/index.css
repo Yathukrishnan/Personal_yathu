@@ -2749,3 +2749,124 @@ button {
     animation: none !important;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   CTA banner (home) — was previously unstyled
+   --------------------------------------------------------------------------- */
+.cta-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: clamp(28px, 4.5vw, 48px);
+  background:
+    radial-gradient(70% 120% at 90% 0%, rgba(255, 74, 28, 0.08), transparent 60%),
+    var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+}
+.cta-banner h2 {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.14;
+}
+
+/* ---------------------------------------------------------------------------
+   Mobile tuning — nav burger switch, hero, grids, forms, footer
+   --------------------------------------------------------------------------- */
+
+/* nav: collapse links into the burger menu (overlay already exists) */
+@media (max-width: 880px) {
+  .nav__links {
+    display: none;
+  }
+  .burger {
+    display: grid;
+  }
+}
+
+/* hero: the floating services list overlaps the title on narrow screens */
+@media (max-width: 900px) {
+  .hero__services {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  /* expertise cards: one per row */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .cta-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* journey cards: a little tighter */
+  .tl-card {
+    padding: 14px 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* contact form: stack the name/email row */
+  .form__row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  /* prevent iOS zoom-on-focus for inputs under 16px */
+  .field input,
+  .field textarea {
+    font-size: 16px;
+  }
+  .hero {
+    padding-top: 96px;
+  }
+  .hero__meta {
+    flex-wrap: wrap;
+    gap: 10px 18px;
+  }
+  /* roomier tap targets on the primary buttons */
+  .hero__cta .btn,
+  .cta-banner .btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+  .footer__bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  /* work page: keep the header from crowding the visual */
+  .wgrid {
+    gap: 48px;
+  }
+  .sviz {
+    height: 300px;
+  }
+  /* contact: smaller radar + tighter title spacing */
+  .orbits {
+    --orbits-r: clamp(104px, 30vw, 128px);
+  }
+  .cthead__title {
+    margin-top: 16px;
+  }
+  .contact-page .contact__form {
+    margin-top: 44px;
+  }
+}
+
+@media (max-width: 560px) {
+  /* nav pill: brand + burger only */
+  .nav .btn--sm {
+    display: none;
+  }
+  .nav__pill {
+    padding: 8px 8px 8px 12px;
+  }
+  /* keep the giant wordmarks from touching the edges */
+  .hero__wordmark,
+  .footer__wordmark {
+    letter-spacing: -0.03em;
+  }
+}
