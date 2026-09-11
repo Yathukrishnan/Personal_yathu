@@ -9,7 +9,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.21.2",
-    "my-web": "file:.."
+    "express": "^4.21.2"
   }
 }
